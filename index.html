@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 100%;
+      max-width: 1296px;
+      margin: 0 auto;
+    }
+    body {
+      font-family: monumentGrotesk, sans-serif;
+    }
+    header {
+      background-color: #121218;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: top;
+      padding: 48px 0 48px 0;
+    }
+    .desktop-logo {
+      width: 576px;
+    }
+    .login-btn {
+      background-color: #b4fd8c;
+      color: #121218;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: 600;
+      border: 1px solid #b4fd8c;
+      transition: 0.3s;
+    }
+    .login-btn:hover {
+      background-color: #a0f77b00;
+      border: 1px solid #a0f77b;
+      color: #a0f77b;
+      transition: 0.3s;
+    }
+    .header-bottom nav {
+      padding: 0 0 50px 0;
+    }
+    .header-bottom nav ul {
+      display: flex;
+      gap: 105px;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+    .header-bottom nav ul li {
+      list-style: none;
+    }
+    .header-bottom nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.3s;
+      border-bottom: 2px dotted rgba(255, 255, 255, 0);
+      padding-bottom: 10px;
+    }
+    .header-bottom nav ul li a:hover {
+      color: #a0f77b;
+      transition: 0.3s;
+      border-bottom: 2px dotted #a0f77b;
+    }
+    footer {
+      background-color: #121218;
+      padding: 50px 0;
+    }
+    footer .icon-area ul {
+      display: flex;
+      gap: 70px;
+      margin-left: -40px;
+      margin-top: 150px;
+    }
+    footer .icon-area ul li {
+      list-style: none;
+    }
+    footer .icon-area ul li a {
+      text-decoration: none;
+      color: #a0f77b;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    footer .icon-area ul li a:hover {
+      color: white;
+      transition: 0.3s;
+    }
+    footer .country-area ul {
+      display: flex;
+      gap: 70px;
+      margin-left: -40px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    footer .country-area ul li {
+      list-style: none;
+    }
+    footer .country-area ul li a {
+      text-decoration: none;
+      color: #a0f77b;
+      font-size: 16px;
+      transition: 0.3s;
+      border-bottom: 2px solid #a0f77b00;
+      padding-bottom: 5px;
+    }
+    footer .country-area ul li a:hover {
+      color: #a0f77b;
+      transition: 0.3s;
+      border-bottom: 2px solid white;
+    }
+    footer .copy-right {
+      color: white;
+      font-size: 12px;
+    }
+    footer .footer-area {
+      display: flex;
+      justify-content: space-between;
+      align-items: top;
+    }
+    footer .footer-col-1 {
+      width: 45%;
+    }
+    footer .footer-col-2,
+    footer .footer-col-3,
+    footer .footer-col-4 {
+      width: 12%;
+    }
+
+    footer .footer-links ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+    footer .footer-links ul li {
+      list-style: none;
+      margin-bottom: 10px;
+      text-align: right;
+    }
+    footer .footer-links ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+      border-bottom: 2px solid #a0f77b00;
+      text-align: right;
+      line-height: 25px;
+      font-weight: 500;
+    }
+    footer .footer-links ul li a:hover {
+      transition: 0.3s;
+      border-bottom: 2px solid #a0f77b;
+    }
+  </style>
+  <body>
+    <header class="">
+      <div class="header-desktop">
+        <div class="header-top container">
+          <div>
+            <a href="https://www.cnet.com/">
+              <img class="desktop-logo" src="./CNET logo.svg" alt="" />
+            </a>
+          </div>
+          <div>
+            <button class="login-btn">Join/Login</button>
+          </div>
+        </div>
+        <div class="header-bottom container">
+          <nav>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">AI</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Wellness</a></li>
+              <li><a href="#">Cover Stories</a></li>
+              <li><a href="#">More</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-mobile">
+        
+      </div>
+    </header>
+    <footer style="margin-top: 5px">
+      <div class="container footer-area footer-desktop">
+        <div class="footer-col-1">
+          <div>
+            <img src="./bottom-logo-dekstop.png" alt="" />
+          </div>
+          <div class="icon-area">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-flipboard"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="country-area">
+            <ul>
+              <li><a href="#">US</a></li>
+              <li><a href="#">France</a></li>
+              <li><a href="#">Germany</a></li>
+              <li><a href="#">Japan</a></li>
+              <li><a href="#">Korea</a></li>
+            </ul>
+          </div>
+          <div class="copy-right">
+            <p>&copy; 2025 CNET, a Ziff Davis company. All rights reserved.</p>
+          </div>
+        </div>
+        <div class="footer-links footer-col-2">
+          <ul>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Best Products</a></li>
+            <li><a href="#">Gift Guide</a></li>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Software Downloads</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-col-3">
+          <ul>
+            <li><a href="#">About CNET</a></li>
+            <li><a href="#">Press Room</a></li>
+            <li><a href="#">Newsletters</a></li>
+            <li><a href="#">Licensing</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-col-4">
+          <ul>
+            <li><a href="#">Manage Preferences</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li>
+              <a href="#">Do Not Sell or Share My Personal Information</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
