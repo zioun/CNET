@@ -1,0 +1,405 @@
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <style>
+    .container {
+      width: 100%;
+      max-width: 1296px;
+      margin: 0 auto;
+    }
+    
+    footer {
+      background-color: #121218;
+      padding: 50px 0;
+      margin-top: 1px;
+      font-family: MonumentGrotesk.woff2;
+    }
+    footer .icon-area ul {
+      display: flex;
+      gap: 70px;
+      margin-left: -40px;
+      margin-top: 150px;
+    }
+    footer .icon-area ul li {
+      list-style: none;
+    }
+    footer .icon-area ul li a {
+      text-decoration: none;
+      color: #a0f77b;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    footer .icon-area ul li a:hover {
+      color: white;
+      transition: 0.3s;
+    }
+    footer .country-area ul {
+      display: flex;
+      gap: 60px;
+      margin-left: -40px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    footer .country-area ul li {
+      list-style: none;
+    }
+    footer .country-area ul li a {
+      text-decoration: none;
+      color: #a0f77b;
+      font-size: 16px;
+      transition: 0.3s;
+      border-bottom: 2px solid #a0f77b00;
+      padding-bottom: 5px;
+    }
+    footer .country-area ul li a:hover {
+      color: #a0f77b;
+      transition: 0.3s;
+      border-bottom: 2px solid white;
+    }
+    footer .copy-right {
+      color: white;
+      font-size: 12px;
+    }
+    footer .footer-area {
+      display: flex;
+      justify-content: space-between;
+      align-items: top;
+    }
+    footer .footer-col-1 {
+      width: 45%;
+    }
+    footer .footer-col-2,
+    footer .footer-col-3,
+    footer .footer-col-4 {
+      width: 12%;
+    }
+
+    footer .footer-links ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+    footer .footer-links ul li {
+      list-style: none;
+      margin-bottom: 10px;
+      text-align: right;
+    }
+    footer .footer-links ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+      border-bottom: 2px solid #a0f77b00;
+      text-align: right;
+      line-height: 25px;
+      font-weight: 500;
+    }
+    footer .footer-links ul li a:hover {
+      transition: 0.3s;
+      border-bottom: 2px solid #a0f77b;
+    }
+    /* mobile responsive start */
+    .header-mobile,
+    .footer-mobile {
+      display: none;
+    }
+
+    @media (max-width: 360px) {
+      
+      .header-mobile,
+      .footer-mobile {
+        display: block;
+      }
+      
+      .footer-dekstop {
+        display: none !important;
+      }
+      footer {
+        padding: 43px 20px;
+      }
+      .mobile-footer-logo {
+        width: 100%;
+        height: auto;
+      }
+      .footer-social-links {
+        padding: 0px;
+      }
+      .footer-social-links ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+      }
+      .footer-social-links ul li {
+        list-style: none;
+      }
+      .footer-social-links ul li a {
+        text-decoration: none;
+        color: #a0f77b;
+        font-size: 20px;
+        transition: 0.3s;
+      }
+      .footer-social-links ul li a:hover {
+        color: white;
+        transition: 0.3s;
+      }
+      .mobile-footer-country-links {
+        margin: 25px 0px 0px 0px !important;
+      }
+      .mobile-footer-country-links li a {
+        font-size: 16px !important;
+        font-weight: 600;
+        margin-top: 25px 0px;
+      }
+      .mobile-footer-copyright {
+        font-size: 12px;
+        color: white;
+        margin-top: 20px;
+      }
+      .footer-mobile .mobile-footer-link-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        flex-direction: column;
+        border-top: 2px dotted #464646;
+        border-bottom: 2px dotted #464646;
+        padding: 40px 0px;
+        margin: 40px 0px;
+      }
+      .footer-mobile .mobile-footer-links {
+        width: 30%;
+      }
+      .footer-mobile .mobile-footer-col-1,
+      .footer-mobile .mobile-footer-col-2,
+      .footer-mobile .mobile-footer-col-3,
+      .footer-mobile .mobile-footer-col-4,
+      .footer-mobile .mobile-footer-col-5,
+      .footer-mobile .mobile-footer-col-6,
+      .footer-mobile .mobile-footer-col-7 {
+        width: 100%;
+      }
+      .footer-mobile .mobile-footer-col-2 {
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+      .footer-mobile .mobile-footer-col-3 {
+        margin-bottom: 25px;
+      }
+      .footer-mobile .mobile-footer-col-5 {
+        margin-top: -50px;
+        margin-bottom: 25px;
+      }
+      .footer-mobile .mobile-footer-col-6 {
+        margin-bottom: 25px;
+      }
+      .footer-mobile .mobile-footer-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+      }
+      .footer-mobile .mobile-footer-links ul li {
+        flex: 1 1 0;
+        margin-bottom: 10px;
+        list-style: none;
+        margin-bottom: 10px;
+      }
+
+      .footer-mobile .mobile-footer-links ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        transition: 0.3s;
+        border-bottom: 2px solid #a0f77b00;
+        text-align: right;
+        line-height: 25px;
+        font-weight: 500;
+      }
+      .footer-mobile .mobile-footer-links ul li a:hover {
+        transition: 0.3s;
+        border-bottom: 2px solid #a0f77b;
+      }
+    }
+  </style>
+  
+    <footer>
+      <div class="container footer-area footer-dekstop">
+        <div class="footer-col-1">
+          <div>
+            <img src="./bottom-logo-dekstop.png" alt="" />
+          </div>
+          <div class="icon-area">
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/cnet/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.youtube.com/user/CNETTV"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.tiktok.com/@cnetdotcom?lang=en"><i class="fab fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/cnet"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://x.com/cnet"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://flipboard.com/@cnet"><i class="fa-brands fa-flipboard"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="country-area">
+            <ul>
+              <li><a href="https://www.cnet.com/">US</a></li>
+              <li><a href="https://www.cnetfrance.fr/">France</a></li>
+              <li><a href="https://www.cnet.de/">Germany</a></li>
+              <li><a href="https://japan.cnet.com/">Japan</a></li>
+              <li><a href="https://www.cnet.co.kr/">Korea</a></li>
+            </ul>
+          </div>
+          <div class="copy-right">
+            <p>&copy; 2025 CNET, a Ziff Davis company. All rights reserved.</p>
+          </div>
+        </div>
+        <div class="footer-links footer-col-2">
+          <ul>
+            <li><a href="https://www.cnet.com/deals/">Deals</a></li>
+            <li><a href="https://www.cnet.com/reviews/">Reviews</a></li>
+            <li><a href="https://www.cnet.com/best-products/">Best Products</a></li>
+            <li><a href="https://www.cnet.com/gifts/">Gift Guide</a></li>
+            <li><a href="https://coupons.cnet.com/">Coupons</a></li>
+            <li><a href="https://www.cnet.com/videos/">Videos</a></li>
+            <li><a href="https://download.cnet.com/">Software Downloads</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-col-3">
+          <ul>
+            <li><a href="https://www.cnet.com/about/">About CNET</a></li>
+            <li><a target="_blank" href="https://www.cnet.com/press-room/">Press Room</a></li>
+            <li><a href="https://www.cnet.com/newsletters/">Newsletters</a></li>
+            <li><a target="_blank" href="mailto:brand_licensing@ziffdavis.com">Licensing</a></li>
+            <li><a href="https://www.cnet.com/sitemaps/">Sitemap</a></li>
+            <li><a target="_blank" href="https://www.ziffdavis.com/careers/">Careers</a></li>
+            <li><a target="_blank" href="https://www.ziffdavis.com/accessibility/">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-links footer-col-4">
+          <ul>
+            <li><a target="_blank" href="#">Manage Preferences</a></li>
+            <li><a target="_blank" href="https://www.ziffdavis.com/ztg-privacy-policy">Privacy Policy</a></li>
+            <li><a target="_blank" href="https://www.ziffdavis.com/terms-of-use">Terms of Use</a></li>
+            <li>
+              <a target="_blank" href="https://www.ziffdavis.com/ztg-privacy-policy">Do Not Sell or Share My Personal Information</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mobile">
+        <div>
+          <img class="mobile-footer-logo" src="./logo-mobile.png" alt="" />
+        </div>
+        <div class="mobile-footer-link-area">
+          <div class="mobile-footer-links mobile-footer-col-1">
+            <ul>
+              <li><a href="https://www.cnet.com/deals/">Deals</a></li>
+              <li><a href="https://www.cnet.com/about/">About CNET</a></li>
+              <li><a target="_blank" href="#">Manage Preferences</a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-2">
+            <ul>
+              <li><a href="https://www.cnet.com/reviews/">Reviews</a></li>
+              <li><a target="_blank" href="https://www.cnet.com/press-room/">Press Room</a></li>
+              <li><a target="_blank" href="https://www.ziffdavis.com/ztg-privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-3">
+            <ul>
+              <li><a href="https://www.cnet.com/best-products/">Best Products</a></li>
+              <li><a href="https://www.cnet.com/newsletters/">Newsletters</a></li>
+              <li><a target="_blank" href="https://www.ziffdavis.com/terms-of-use">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-4">
+            <ul>
+              <li><a href="https://www.cnet.com/gifts/">Gift Guide</a></li>
+              <li><a target="_blank" href="mailto:brand_licensing@ziffdavis.com">Licensing</a></li>
+              <li>
+              <a target="_blank" href="https://www.ziffdavis.com/ztg-privacy-policy">Do Not Sell or Share My Personal Information</a>
+            </li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-5">
+            <ul>
+              <li><a href="https://coupons.cnet.com/">Coupons</a></li>
+              <li><a href="https://www.cnet.com/sitemaps/">Sitemap</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-6">
+            <ul>
+              <li><a href="https://www.cnet.com/videos/">Videos</a></li>
+              <li><a target="_blank" href="https://www.ziffdavis.com/careers/">Careers</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-7">
+            <ul>
+              <li><a href="https://download.cnet.com/">Software Downloads</a></li>
+              <li><a target="_blank" href="https://www.ziffdavis.com/accessibility/">Accessibility</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social-links">
+          <ul>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/cnet/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.youtube.com/user/CNETTV"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.tiktok.com/@cnetdotcom?lang=en"><i class="fab fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/cnet"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://x.com/cnet"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://flipboard.com/@cnet"><i class="fa-brands fa-flipboard"></i></a>
+              </li>
+          </ul>
+
+          <ul class="mobile-footer-country-links">
+            <li><a href="https://www.cnet.com/">US</a></li>
+              <li><a href="https://www.cnetfrance.fr/">France</a></li>
+              <li><a href="https://www.cnet.de/">Germany</a></li>
+              <li><a href="https://japan.cnet.com/">Japan</a></li>
+              <li><a href="https://www.cnet.co.kr/">Korea</a></li>
+          </ul>
+
+          <p class="mobile-footer-copyright">
+            &copy; 2025 CNET, a Ziff Davis company. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  
+
