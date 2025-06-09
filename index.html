@@ -168,10 +168,91 @@
       transition: 0.3s;
       border-bottom: 2px solid #a0f77b;
     }
+    /* mobile responsive start */
+    .header-mobile,
+    .footer-mobile {
+      display: none;
+    }
+
+    @media (max-width: 360px) {
+      .header-mobile {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 18px 30px 18px;
+      }
+      .mobile-menu a {
+        color: #121218;
+        font-size: 20px;
+        padding: 5px 10px;
+        background-color: #a0f77b;
+        border-radius: 5px;
+      }
+      .menu-close {
+        display: none;
+      }
+      .mobile-menu-item {
+        display: none;
+        position: absolute;
+        top: 12%;
+        left: 0;
+        width: 100%;
+        background-color: #a0f77b;
+        color: white;
+      }
+      .mobile-menu-item ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        margin: 0;
+      }
+      .mobile-menu-item ul li {
+        list-style: none;
+        padding: 0 20px;
+      }
+      .mobile-menu-item ul li a {
+        text-decoration: none;
+        color: #121218;
+        font-size: 24px;
+        font-weight: 600;
+        transition: 0.3s;
+        display: block;
+        border-bottom: 2px dotted #1212182a;
+        padding-bottom: 20px;
+      }
+      .mobile-login-btn {
+        background-color: #daffc7;
+        color: #121218;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: 500;
+        border: 1px solid #b4fd8c;
+        transition: 0.3s;
+        margin: 0 20px;
+      }
+      .header-mobile,
+      .footer-mobile {
+        display: block;
+      }
+      .header-dekstop {
+        display: none;
+      }
+      .footer-dekstop {
+        display: none !important;
+      }
+      .mobile-footer-logo{
+        width: 100%;
+        height: auto;
+      }
+    }
   </style>
   <body>
     <header class="">
-      <div class="header-desktop">
+      <div class="header-dekstop">
         <div class="header-top container">
           <div>
             <a href="https://www.cnet.com/">
@@ -198,11 +279,30 @@
         </div>
       </div>
       <div class="header-mobile">
-        
+        <div>
+          <img src="./mobile-logo.png" alt="" />
+        </div>
+        <div class="mobile-menu">
+          <a class="menu-bar" href="#"><i class="fas fa-bars"></i></a>
+          <a class="menu-close" href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="mobile-menu-item">
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Wellness</a></li>
+            <li><a href="#">Cover Stories</a></li>
+            <li><a href="#">More</a></li>
+            <button class="mobile-login-btn">Join/login</button>
+          </ul>
+        </div>
       </div>
     </header>
     <footer style="margin-top: 5px">
-      <div class="container footer-area footer-desktop">
+      <div class="container footer-area footer-dekstop">
         <div class="footer-col-1">
           <div>
             <img src="./bottom-logo-dekstop.png" alt="" />
@@ -275,6 +375,44 @@
           </ul>
         </div>
       </div>
+      <div class="footer-mobile">
+        <div>
+          <img class="mobile-footer-logo" src="./logo-mobile.png" alt="" />
+        </div>
+      </div>
     </footer>
   </body>
+  <script>
+    const menuBar = document.querySelector(".menu-bar");
+    const menuClose = document.querySelector(".menu-close");
+    const headerMobile = document.querySelector(".header-mobile");
+
+    menuBar.addEventListener("click", () => {
+      headerMobile.classList.add("active");
+      menuBar.style.display = "none";
+      menuClose.style.display = "block";
+    });
+
+    menuClose.addEventListener("click", () => {
+      headerMobile.classList.remove("active");
+      menuBar.style.display = "block";
+      menuClose.style.display = "none";
+    });
+
+    const mobileMenuItem = document.querySelector(".mobile-menu-item");
+
+    menuBar.addEventListener("click", () => {
+      headerMobile.classList.add("active");
+      menuBar.style.display = "none";
+      menuClose.style.display = "block";
+      mobileMenuItem.style.display = "block";
+    });
+
+    menuClose.addEventListener("click", () => {
+      headerMobile.classList.remove("active");
+      menuBar.style.display = "block";
+      menuClose.style.display = "none";
+      mobileMenuItem.style.display = "none";
+    });
+  </script>
 </html>
