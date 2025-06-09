@@ -244,10 +244,117 @@
       .footer-dekstop {
         display: none !important;
       }
-      .mobile-footer-logo{
+      footer {
+        padding: 43px 20px;
+      }
+      .mobile-footer-logo {
         width: 100%;
         height: auto;
       }
+      .footer-social-links {
+        padding: 0px;
+      }
+      .footer-social-links ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+      }
+      .footer-social-links ul li {
+        list-style: none;
+      }
+      .footer-social-links ul li a {
+        text-decoration: none;
+        color: #a0f77b;
+        font-size: 20px;
+        transition: 0.3s;
+      }
+      .footer-social-links ul li a:hover {
+        color: white;
+        transition: 0.3s;
+      }
+      .mobile-footer-country-links {
+        margin: 25px 0px 0px 0px !important;
+      }
+      .mobile-footer-country-links li a {
+        font-size: 16px !important;
+        font-weight: 600;
+        margin-top: 25px 0px;
+      }
+      .mobile-footer-copyright {
+        font-size: 12px;
+        color: white;
+        margin-top: 20px;
+      }
+      .footer-mobile .mobile-footer-link-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        flex-direction: column;
+        border-top: 2px dotted #464646;
+        border-bottom: 2px dotted #464646;
+        padding: 40px 0px;
+        margin: 40px 0px;
+      }
+      .footer-mobile .mobile-footer-links {
+        width: 30%;
+      }
+      .footer-mobile .mobile-footer-col-1,
+      .footer-mobile .mobile-footer-col-2,
+      .footer-mobile .mobile-footer-col-3,
+      .footer-mobile .mobile-footer-col-4,
+      .footer-mobile .mobile-footer-col-5,
+      .footer-mobile .mobile-footer-col-6,
+      .footer-mobile .mobile-footer-col-7 {
+        width: 100%;
+      }
+      .footer-mobile .mobile-footer-col-2{
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+      .footer-mobile .mobile-footer-col-3{
+        margin-bottom: 25px;
+      }
+      .footer-mobile .mobile-footer-col-5{
+        margin-top: -50px;
+        margin-bottom: 25px;
+      }
+      .footer-mobile .mobile-footer-col-6{
+        margin-bottom: 25px;
+      }
+      .footer-mobile .mobile-footer-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+      }
+      .footer-mobile .mobile-footer-links ul li {
+        flex: 1 1 0;
+        margin-bottom: 10px;
+        list-style: none;
+        margin-bottom: 10px;
+
+      }
+      
+      .footer-mobile .mobile-footer-links ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        transition: 0.3s;
+        border-bottom: 2px solid #a0f77b00;
+        text-align: right;
+        line-height: 25px;
+        font-weight: 500;
+      }
+      .footer-mobile .mobile-footer-links ul li a:hover {
+        transition: 0.3s;
+        border-bottom: 2px solid #a0f77b;
+      }
+      
     }
   </style>
   <body>
@@ -378,6 +485,101 @@
       <div class="footer-mobile">
         <div>
           <img class="mobile-footer-logo" src="./logo-mobile.png" alt="" />
+        </div>
+        <div class="mobile-footer-link-area">
+          <div class="mobile-footer-links mobile-footer-col-1">
+            <ul>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">About CNET</a></li>
+              <li><a href="#">Manage Preferences</a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-2">
+            <ul>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Press Room</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-3">
+            <ul>
+              <li><a href="#">Best Products</a></li>
+              <li><a href="#">Newsletters</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-4">
+            <ul>
+              <li><a href="#">Gift Guide</a></li>
+              <li><a href="#">Licensing</a></li>
+              <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-5">
+            <ul>
+              <li><a href="#">Coupons</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-6">
+            <ul>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="mobile-footer-links mobile-footer-col-7">
+            <ul>
+              <li><a href="#">Software Downloads</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-flipboard"></i></a>
+            </li>
+          </ul>
+
+          <ul class="mobile-footer-country-links">
+            <li>
+              <a href="#">US</a>
+            </li>
+            <li>
+              <a href="#">France</a>
+            </li>
+            <li>
+              <a href="#">Germany</a>
+            </li>
+            <li>
+              <a href="#">Japan</a>
+            </li>
+            <li>
+              <a href="#">Korea</a>
+            </li>
+          </ul>
+
+          <p class="mobile-footer-copyright">
+            &copy; 2025 CNET, a Ziff Davis company. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
