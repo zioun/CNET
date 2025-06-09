@@ -14,7 +14,7 @@
   }
   header {
     background-color: #121218;
-    font-family: MonumentGrotesk.woff2;
+    font-family: MonumentGrotesk;
   }
   .header-top {
     display: flex;
@@ -122,7 +122,7 @@
       display: block;
       border-bottom: 2px dotted #1212182a;
       padding-bottom: 20px;
-      font-family: Stardust.woff2;
+      font-family: Stardust;
     }
     .mobile-login-btn {
       background-color: #daffc7;
@@ -141,18 +141,21 @@
     .footer-mobile {
       display: block;
     }
+    .header-mobile img {
+      width: 140px;
+    }
     .header-dekstop {
       display: none;
     }
   }
 </style>
-<body>
+
   <header class="">
     <div class="header-dekstop">
       <div class="header-top container">
         <div>
           <a href="https://www.cnet.com/">
-            <img class="desktop-logo" src="./CNET logo.svg" alt="" />
+            <img class="desktop-logo" src="https://s3.pushplanet.com/users/9fdf4d3674104b1098568e548df6ffd5/uploads/e3866a6b166e4a409db02606408ad405/CNETlogo.svg" alt="" />
           </a>
         </div>
         <div>
@@ -184,7 +187,7 @@
     </div>
     <div class="header-mobile">
       <div>
-        <img src="./mobile-logo.png" alt="" />
+        <img src="https://s3.pushplanet.com/users/9fdf4d3674104b1098568e548df6ffd5/uploads/bdf696a13c7e43189b24c84869d0917e/1.svg" alt="" />
       </div>
       <div class="mobile-menu">
         <a class="menu-bar" href="#"><i class="fas fa-bars"></i></a>
@@ -213,7 +216,7 @@
       </div>
     </div>
   </header>
-</body>
+
 <script>
   const menuBar = document.querySelector(".menu-bar");
   const menuClose = document.querySelector(".menu-close");
