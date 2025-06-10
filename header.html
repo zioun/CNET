@@ -15,6 +15,7 @@
   header {
     background-color: #121218;
     font-family: MonumentGrotesk;
+    padding: 0px 30px;
   }
   .header-top {
     display: flex;
@@ -48,8 +49,9 @@
   }
   .header-bottom nav ul {
     display: flex;
-    gap: 105px;
+    justify-content: space-between;
     align-items: center;
+    max-width: 90%;
     padding: 0;
     margin: 0;
   }
@@ -77,6 +79,9 @@
   }
 
   @media (max-width: 360px) {
+    header{
+      padding: 0px 0px;
+    }
     .header-mobile {
       display: flex !important;
       justify-content: space-between;
@@ -180,7 +185,6 @@
                 >Cover Stories</a
               >
             </li>
-            <li><a href="#">More</a></li>
           </ul>
         </nav>
       </div>
@@ -210,7 +214,6 @@
               >Cover Stories</a
             >
           </li>
-          <li><a href="#">More</a></li>
           <button class="mobile-login-btn">Join/login</button>
         </ul>
       </div>
